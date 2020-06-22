@@ -25,7 +25,7 @@ const longitude=Number(29.099+Math.random()*(0.0001-0.0000001)+0.0000001).toFixe
 	  url.opts={"hints":false}
     $.post(url, async (err, resp, data) => {
       try {
-        const _data = JSON.parse(resp)
+        const _data = JSON.parse(data)
         // 处理异常
         if (_data.setCookie==null) {
           throw new Error(`登录app失败`)
