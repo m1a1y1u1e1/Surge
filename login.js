@@ -11,7 +11,7 @@ const longitude=Number(29.099+Math.random()*(0.0001-0.0000001)+0.0000001).toFixe
   .finally(() => $.done())
  
 
- function tieba() {
+ function sign() {
   return new Promise((resove) => {
     const url = { url: `https://isite.yindatech.com/phone_1.2.6!applogin.action`, headers: {} }
 	  url.headers['Host'] ='isite.yindatech.com'
