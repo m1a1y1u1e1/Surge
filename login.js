@@ -22,6 +22,7 @@ const longitude=Number(29.099+Math.random()*(0.0001-0.0000001)+0.0000001).toFixe
 	  url.headers['Accept-Language'] = 'zh-Hans-US;q=1'
 	  url.headers['Accept-Encoding'] = 'gzip, deflate, br'
 	  url.body=(denglu)
+	  url.opts={"hints":false}
     $.post(url, async (err, resp, data) => {
       try {
         const _data = JSON.parse(resp)
